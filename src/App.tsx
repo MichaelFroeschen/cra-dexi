@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { EntryDB, Entry } from './DB';
 
 function App() {
+  const db = new EntryDB();
+  db.entries.add(new Entry('Test'));
   return (
     <div className="App">
       <header className="App-header">
