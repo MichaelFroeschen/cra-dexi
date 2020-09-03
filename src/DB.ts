@@ -1,6 +1,7 @@
 import Dexie from "dexie";
 
 export class Entry {
+  // Comment out the id field, to make it work again
   id?: number;
   text: string;
 
